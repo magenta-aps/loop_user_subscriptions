@@ -314,13 +314,6 @@ function loop_user_subscriptions_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['label'] = 'Overskrift';
   $handler->display->display_options['header']['area_text_custom']['content'] = 'Emner';
-  /* Opførsel ved ingen resultater: Global: Tekstområde */
-  $handler->display->display_options['empty']['area']['id'] = 'area';
-  $handler->display->display_options['empty']['area']['table'] = 'views';
-  $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'You are not subscribed to any item.';
-  $handler->display->display_options['empty']['area']['format'] = 'html';
   /* Forbindelse: Flag: subscribe_taxonomy */
   $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
   $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'taxonomy_term_data';
